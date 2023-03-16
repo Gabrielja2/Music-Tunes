@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
 
 export type Props = {
   trackId: number | string;
@@ -8,15 +7,6 @@ export type Props = {
   artworkUrl100: string;
   artistName: string;
   collectionName: string;
-};
-
-MusicCard.propTypes = {
-  trackId: PropTypes.string.isRequired,
-  previewUrl: PropTypes.string.isRequired,
-  trackName: PropTypes.string.isRequired,
-  artworkUrl100: PropTypes.string.isRequired,
-  artistName: PropTypes.string.isRequired,
-  collectionName: PropTypes.string.isRequired,
 };
 
 export default function MusicCard({
